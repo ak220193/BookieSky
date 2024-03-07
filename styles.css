@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+header h1 {
+    background-color: #fffbaf;
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#searchInput{
+    width: 20%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius:5px
+}
+searchInput text {
+    color: white;
+}
+
+.book-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-primary{
+    font-size: 16px;
+    border: 1px solid black;
+    margin-left: 2px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-primary:hover {
+    background-color: rgb(124, 124, 253);
+}
+
+.card-container{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(136, 255, 251);
+   margin-left: 20px;
+   margin-top:20px;
+   border-radius: 5px;
+}
+.title{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-family: "raleway", sans-serif;
+}
+title h6{
+    font-weight: 400;
+}
+.title p {
+    text-align: justify; 
+    max-width: 600px; 
+    text-wrap: wrap;
+    margin: 0 auto; 
+    line-height: 1.5; 
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    background-color: rgb(100, 100, 244);
+}
+
+.section Add {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#openModalBtn {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: blue; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; 
+    float: right;
+}
+
+#modal{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(241, 255, 134);
+    margin-left: 20px;
+    text-align: center;
+}
+
+.modal h1,h3 {
+    font-size: medium;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#title-book1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 50%;
+    height: 35px;
+    border:none;
+    border-radius:5px;
+}
+#title-book2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50%;
+    height: 35px;
+    border:none;
+    border-radius:5px;
+ 
+}
+
+#addBookBtn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cancelBtn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modalcls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.hidden {
+    display: none;
+}

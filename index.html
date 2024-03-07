@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookiesky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bookiesky</h1>
+    </header>
+    <section>
+        <div class="input-container">
+            <input type="text" id="searchInput" placeholder="Search for a book...">
+            <button class="btn-primary" onclick="searchBooks()">Search</button>
+        </div>
+    </section>
+    
+    <section class="book-list">
+        <div class="card-container"> 
+            <div class="title"> 
+                <h3>Rich dad Poor Dad</h3> 
+                <h4> Robert </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque? Qui eius a consequatur incidunt culpa praesentium itaque </p>
+            </div>
+            <div class="btn">
+                <button onclick="deleteBook(event)"> Delete Book </button>
+                <button onclick="deleteContent(event)"> Delete content </button>
+            </div>
+        </div>
+        <div class="card-container"> 
+            <div class="title"> 
+                <h3>Harry Potter</h3> 
+                <h4> J.K Rowling </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque? Qui eius a consequatur incidunt culpa praesentium itaque </p>
+            </div>
+            <div class="btn">
+                <button onclick="deleteBook(event)"> Delete Book </button>
+                <button onclick="deleteContent(event)"> Delete content </button>
+            </div>
+        </div>
+        <div class="card-container"> 
+            <div class="title"> 
+                <h3>hamlet</h3> 
+                <h4> Shakeshpere </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque? Qui eius a consequatur incidunt culpa praesentium itaque </p>
+            </div>
+            <div class="btn">
+                <button onclick="deleteBook(event)"> Delete Book </button>
+                <button onclick="deleteContent(event)"> Delete content </button>
+            </div>
+        </div>
+      
+    </section>
+    
+    <section class="Add">
+        <button id="openModalBtn" onclick="toggleModal()">+</button>
+    </section>
+    
+    <section class="modalcls hidden">
+        <div class="modal" id="modal">
+            <h1>Add Book</h1>
+            <input type="text" id="title-book1" placeholder="Book Title" />
+            <input type="text" id="title-book2" placeholder="Book Author" /> <br/>
+            <textarea name="text" id="content" placeholder="Add your Content here" cols="20" rows="6"></textarea> <br/>
+            <button id="addBookBtn">Add Book</button>
+            <button id="cancelBtn" onclick="toggleModal()">Cancel</button>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
